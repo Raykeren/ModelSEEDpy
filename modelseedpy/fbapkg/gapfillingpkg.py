@@ -67,7 +67,7 @@ class GapfillingPkg(BaseFBAPkg):
 
     def __init__(self, model):
         BaseFBAPkg.__init__(self, model, "gapfilling", {}, {})
-        self.pkgmgr.addpkgs(["ObjConstPkg"])
+        self.pkgmgr.addpkgs(["objconstpkg"])
 
     def build_package(self, parameters):
         self.validate_parameters(parameters, [], {
