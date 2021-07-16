@@ -88,7 +88,7 @@ class GapfillingPkg(BaseFBAPkg):
             "blacklist": default_blacklist
         })
         # Adding constraint for target reaction
-        self.pkgmgr.getpkg("ObjConstPkg").build_package(self.parameters["minimum_obj"], None)
+        self.pkgmgr.getpkg("objconstpkg").build_package(self.parameters["minimum_obj"], None)
         # Determine all indecies that should be gapfilled
         indexhash = {"none": 0}
         for metabolite in self.model.metabolites:
